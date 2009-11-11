@@ -1,12 +1,16 @@
 %define name clamz
 %define version 0.2
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Command-line downloader for the amazon.com MP3 music store
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://clamz.googlecode.com/files/%{name}-%{version}.tar.gz
+#http://code.google.com/p/clamz/issues/detail?id=5
+Source1: clamz.desktop
+#http://code.google.com/p/clamz/issues/detail?id=6
+Source2: clamz.xml
 License: GPLv3
 Group: Networking/WWW
 Url: http://code.google.com/p/clamz/
@@ -34,6 +38,8 @@ complete albums that you have purchased from Amazon.
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+install -D %SOURCE1 %buildroot%_datadir/applications/%name.desktop
+install -D %SOURCE2 %buildroot%_datadir/mime/packages/%name.xml
 
 %clean
 rm -rf %{buildroot}
@@ -43,4 +49,6 @@ rm -rf %{buildroot}
 %doc README
 %_bindir/%name
 %_datadir/man/man1/%name.1*
+%_datadir/applications/%name.desktop
+%_datadir/mime/packages/%name.xml
 
