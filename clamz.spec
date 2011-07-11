@@ -1,6 +1,6 @@
 %define name clamz
 %define version 0.4
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Command-line downloader for the amazon.com MP3 music store
 Name: %{name}
