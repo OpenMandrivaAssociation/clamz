@@ -47,3 +47,35 @@ rm -rf %{buildroot}
 %_datadir/applications/%name.desktop
 %_datadir/mime/packages/%name.xml
 
+
+
+%changelog
+* Sun Oct 30 2011 Götz Waschk <waschk@mandriva.org> 0.5-1mdv2011.0
++ Revision: 707907
+- update to new version 0.5
+
+* Mon Jul 11 2011 Götz Waschk <waschk@mandriva.org> 0.4-2
++ Revision: 689500
+- rebuild
+
+* Sat Jul 10 2010 Götz Waschk <waschk@mandriva.org> 0.4-1mdv2011.0
++ Revision: 550263
+- new version
+
+* Thu Apr 01 2010 Götz Waschk <waschk@mandriva.org> 0.3-1mdv2010.1
++ Revision: 530579
+- new version
+- use included desktop and mime database files
+
+* Fri Dec 04 2009 Götz Waschk <waschk@mandriva.org> 0.2-3mdv2010.1
++ Revision: 473436
+- don't show it in the menu
+
+* Wed Nov 11 2009 Götz Waschk <waschk@mandriva.org> 0.2-2mdv2010.1
++ Revision: 465073
+- add desktop entry and mime type
+
+* Wed Nov 11 2009 Götz Waschk <waschk@mandriva.org> 0.2-1mdv2010.1
++ Revision: 464996
+- import clamz
+
