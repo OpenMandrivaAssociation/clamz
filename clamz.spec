@@ -1,7 +1,7 @@
 Summary:	Command-line downloader for the amazon.com MP3 music store
 Name:		clamz
 Version:	0.5
-Release:	3
+Release:	4
 License:	GPLv3
 Group:		Networking/WWW
 Url:		http://code.google.com/p/clamz/
