@@ -4,7 +4,7 @@ Version:	0.5
 Release:	11
 License:	GPLv3
 Group:		Networking/WWW
-Url:		http://code.google.com/p/clamz/
+Url:		https://code.google.com/p/clamz/
 Source0:	http://clamz.googlecode.com/files/%{name}-%{version}.tar.gz
 
 BuildRequires: desktop-file-utils
